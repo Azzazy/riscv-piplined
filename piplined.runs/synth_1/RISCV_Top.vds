@@ -1,0 +1,1636 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Mar 19 08:46:31 2019
+# Process ID: 7580
+# Current directory: C:/Users/msa.azzazy.AUC/piplined/piplined.runs/synth_1
+# Command line: vivado.exe -log RISCV_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV_Top.tcl
+# Log file: C:/Users/msa.azzazy.AUC/piplined/piplined.runs/synth_1/RISCV_Top.vds
+# Journal file: C:/Users/msa.azzazy.AUC/piplined/piplined.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RISCV_Top.tcl -notrace
+Command: synth_design -top RISCV_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4988 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 306.641 ; gain = 96.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RISCV_Top' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RISCV_Top.v:6]
+INFO: [Synth 8-638] synthesizing module 'RISCV' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RISCV.v:6]
+INFO: [Synth 8-638] synthesizing module 'RegWLoad' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Mux2_1' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux2_1' (1#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+INFO: [Synth 8-638] synthesizing module 'FlipFlop' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/FlipFlop.v:6]
+INFO: [Synth 8-256] done synthesizing module 'FlipFlop' (2#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/FlipFlop.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RegWLoad' (3#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+INFO: [Synth 8-638] synthesizing module 'RegWLoad__parameterized0' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+	Parameter SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegWLoad__parameterized0' (3#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+INFO: [Synth 8-638] synthesizing module 'RegWLoad__parameterized1' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+	Parameter SIZE bound to: 155 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegWLoad__parameterized1' (3#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+INFO: [Synth 8-638] synthesizing module 'RegWLoad__parameterized2' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+	Parameter SIZE bound to: 107 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegWLoad__parameterized2' (3#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+INFO: [Synth 8-638] synthesizing module 'RegWLoad__parameterized3' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+	Parameter SIZE bound to: 71 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegWLoad__parameterized3' (3#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v:6]
+INFO: [Synth 8-638] synthesizing module 'InstMem' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:6]
+WARNING: [Synth 8-3848] Net mem[13] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[14] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[15] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[16] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[17] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[18] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[19] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[20] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[21] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[22] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[23] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[24] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[25] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[26] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[27] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[28] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[29] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[30] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[31] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[32] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[33] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[34] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[35] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[36] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[37] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[38] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[39] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[40] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[41] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[42] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[43] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[44] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[45] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[46] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[47] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[48] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[49] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[50] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[51] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[52] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[53] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[54] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[55] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[56] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[57] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[58] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[59] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[60] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[61] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[62] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+WARNING: [Synth 8-3848] Net mem[63] in module/entity InstMem does not have driver. [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:12]
+INFO: [Synth 8-256] done synthesizing module 'InstMem' (4#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'RippleAdder' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RippleAdder.v:6]
+INFO: [Synth 8-638] synthesizing module 'Full_Adder' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Full_Adder.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Full_Adder' (5#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Full_Adder.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RippleAdder' (6#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RippleAdder.v:6]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegFile.v:6]
+INFO: [Synth 8-638] synthesizing module 'Decoder5_32' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Decoder5_32.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Decoder5_32' (7#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Decoder5_32.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (8#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegFile.v:6]
+INFO: [Synth 8-638] synthesizing module 'ImmGen' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ImmGen.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ImmGen' (9#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ImmGen.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mux2_1__parameterized0' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux2_1__parameterized0' (9#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ALU.v:6]
+INFO: [Synth 8-638] synthesizing module 'AdderSub' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/AdderSub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'AdderSub' (10#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/AdderSub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ALU.v:6]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft1' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ShiftLeft1.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft1' (12#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ShiftLeft1.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mux2_1__parameterized1' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux2_1__parameterized1' (12#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:6]
+WARNING: [Synth 8-5788] Register mem_reg[3] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[4] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[5] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[6] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[7] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[8] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[9] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[10] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[11] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[12] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[13] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[14] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[15] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[16] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[17] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[18] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[19] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[20] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[21] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[22] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[23] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[24] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[25] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[26] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[27] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[28] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[29] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[30] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[31] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[32] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[33] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[34] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[35] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[36] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[37] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[38] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[39] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[40] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[41] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[42] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[43] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[44] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[45] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[46] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[47] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[48] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[49] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[50] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[51] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[52] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[53] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[54] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[55] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[56] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[57] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[58] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[59] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[60] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[61] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[62] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+WARNING: [Synth 8-5788] Register mem_reg[63] in module DataMem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:21]
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (13#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v:6]
+INFO: [Synth 8-638] synthesizing module 'Mux2_1__parameterized2' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux2_1__parameterized2' (13#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v:6]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ControlUnit.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (14#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ControlUnit.v:6]
+INFO: [Synth 8-638] synthesizing module 'ALUControl' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ALUControl.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ALUControl' (15#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ALUControl.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RISCV' (16#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RISCV.v:6]
+INFO: [Synth 8-638] synthesizing module 'SSDDriver' [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/SSDDriver.v:6]
+INFO: [Synth 8-256] done synthesizing module 'SSDDriver' (17#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/SSDDriver.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RISCV_Top' (18#1) [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RISCV_Top.v:6]
+WARNING: [Synth 8-3331] design ShiftLeft1 has unconnected port d_in[31]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[19]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[18]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[17]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[16]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[15]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[14]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[13]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[12]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[4]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[3]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[2]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[1]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 347.367 ; gain = 137.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 347.367 ; gain = 137.059
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/constrs_1/imports/Lab7Src/PackagePins.xdc]
+Finished Parsing XDC File [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/constrs_1/imports/Lab7Src/PackagePins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/constrs_1/imports/Lab7Src/PackagePins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RISCV_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RISCV_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 671.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 671.566 ; gain = 461.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 671.566 ; gain = 461.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 671.566 ; gain = 461.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "sub" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "z" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Branch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MemRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALUOp0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MemWrite" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 671.566 ; gain = 461.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 192   
++---Registers : 
+	               32 Bit    Registers := 77    
+	                1 Bit    Registers := 1453  
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1519  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Mux2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module FlipFlop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module InstMem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+Module Full_Adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module Decoder5_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ImmGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module Mux2_1__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module AdderSub 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+Module Mux2_1__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DataMem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 64    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 64    
+Module Mux2_1__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 5     
+Module ALUControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module RISCV 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module SSDDriver 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "a1/z" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'rv/ID_EX/genblk1[153].f/q_reg' (FDC) to 'rv/ID_EX/genblk1[151].f/q_reg'
+INFO: [Synth 8-3886] merging instance 'rv/EX_MEM/genblk1[105].f/q_reg' (FDC) to 'rv/EX_MEM/genblk1[103].f/q_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[31].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[30].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[29].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[28].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[27].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[26].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[25].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[24].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[23].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[22].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[21].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[20].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[19].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[18].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[17].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[16].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[15].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[14].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[13].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[0].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[1].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[2].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[3].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[4].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[5].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[6].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[7].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[8].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[9].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[10].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[11].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/rf/\r0/genblk1[12].f/q_reg )
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[5][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[4][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[3][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[2][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[1][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[0][0]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][16]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][16]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[5][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[4][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[3][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[2][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[1][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[0][16]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[5][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[4][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[3][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[2][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[1][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[0][1]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][17]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[5][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[4][17]' (FD) to 'rv/imem/mem_reg[11][21]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[3][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[2][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[1][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[0][17]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[5][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[4][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[3][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[2][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[1][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[0][2]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[5][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[4][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[3][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[2][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[1][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[0][18]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[5][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[4][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[3][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[2][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[1][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[0][19]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[12][3]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[11][3]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[10][3]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[9][3]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[8][3]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[7][3]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Synth 8-3886] merging instance 'rv/imem/mem_reg[6][3]' (FD) to 'rv/imem/mem_reg[11][31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (rv/imem/\mem_reg[3][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/imem/\mem_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/\ID_EX/genblk1[4].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/\ID_EX/genblk1[4].f/q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rv/\ID_EX/genblk1[4].f/q_reg )
+WARNING: [Synth 8-3332] Sequential element (mem_reg[3][15]) is unused and will be removed from module InstMem.
+WARNING: [Synth 8-3332] Sequential element (mem_reg[0][15]) is unused and will be removed from module InstMem.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[0].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[1].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[2].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[3].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[4].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[5].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[6].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[7].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[8].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[9].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[10].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[11].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[12].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[13].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[14].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[15].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[16].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[17].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[18].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[19].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[20].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[21].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[22].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[23].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[24].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[25].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[26].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[27].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[28].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[29].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[30].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (r0/genblk1[31].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[0].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[1].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[2].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[3].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[4].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[5].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[6].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[7].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[8].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[9].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[10].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[11].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[12].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[13].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[14].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[15].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[16].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[17].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[18].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[19].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[20].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[21].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[22].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[23].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[24].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[25].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[26].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[27].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[28].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[29].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[30].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].ri/genblk1[31].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[0].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[1].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[2].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[3].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[4].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[5].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[6].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[7].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[8].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[9].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[10].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[11].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[12].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[13].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[14].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[15].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[16].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[17].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[18].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[19].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[20].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[21].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[22].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[23].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[24].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[25].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[26].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[27].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[28].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[29].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[30].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].ri/genblk1[31].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].ri/genblk1[0].f/q_reg) is unused and will be removed from module RegFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].ri/genblk1[1].f/q_reg) is unused and will be removed from module RegFile.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 671.566 ; gain = 461.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 671.566 ; gain = 461.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 671.566 ; gain = 461.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    25|
+|3     |LUT1   |    25|
+|4     |LUT2   |    75|
+|5     |LUT3   |   105|
+|6     |LUT4   |    72|
+|7     |LUT5   |   147|
+|8     |LUT6   |   955|
+|9     |MUXF7  |   352|
+|10    |MUXF8  |    96|
+|11    |FDCE   |   870|
+|12    |FDPE   |     7|
+|13    |FDRE   |  1972|
+|14    |IBUF   |     9|
+|15    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------------+------+
+|      |Instance                |Module                   |Cells |
++------+------------------------+-------------------------+------+
+|1     |top                     |                         |  4739|
+|2     |  rv                    |RISCV                    |  4534|
+|3     |    EX_MEM              |RegWLoad__parameterized2 |   182|
+|4     |      \genblk1[0].f     |FlipFlop_702             |     1|
+|5     |      \genblk1[102].f   |FlipFlop_703             |     6|
+|6     |      \genblk1[103].f   |FlipFlop_704             |     1|
+|7     |      \genblk1[104].f   |FlipFlop_705             |     2|
+|8     |      \genblk1[106].f   |FlipFlop_706             |     1|
+|9     |      \genblk1[10].f    |FlipFlop_707             |     1|
+|10    |      \genblk1[11].f    |FlipFlop_708             |     1|
+|11    |      \genblk1[12].f    |FlipFlop_709             |     1|
+|12    |      \genblk1[13].f    |FlipFlop_710             |     1|
+|13    |      \genblk1[14].f    |FlipFlop_711             |     1|
+|14    |      \genblk1[15].f    |FlipFlop_712             |     1|
+|15    |      \genblk1[16].f    |FlipFlop_713             |     1|
+|16    |      \genblk1[17].f    |FlipFlop_714             |     1|
+|17    |      \genblk1[18].f    |FlipFlop_715             |     1|
+|18    |      \genblk1[19].f    |FlipFlop_716             |     1|
+|19    |      \genblk1[1].f     |FlipFlop_717             |     1|
+|20    |      \genblk1[20].f    |FlipFlop_718             |     1|
+|21    |      \genblk1[21].f    |FlipFlop_719             |     1|
+|22    |      \genblk1[22].f    |FlipFlop_720             |     1|
+|23    |      \genblk1[23].f    |FlipFlop_721             |     1|
+|24    |      \genblk1[24].f    |FlipFlop_722             |     1|
+|25    |      \genblk1[25].f    |FlipFlop_723             |     1|
+|26    |      \genblk1[26].f    |FlipFlop_724             |     1|
+|27    |      \genblk1[27].f    |FlipFlop_725             |     1|
+|28    |      \genblk1[28].f    |FlipFlop_726             |     1|
+|29    |      \genblk1[29].f    |FlipFlop_727             |     1|
+|30    |      \genblk1[2].f     |FlipFlop_728             |     1|
+|31    |      \genblk1[30].f    |FlipFlop_729             |     1|
+|32    |      \genblk1[31].f    |FlipFlop_730             |     1|
+|33    |      \genblk1[32].f    |FlipFlop_731             |     1|
+|34    |      \genblk1[33].f    |FlipFlop_732             |     1|
+|35    |      \genblk1[34].f    |FlipFlop_733             |     1|
+|36    |      \genblk1[35].f    |FlipFlop_734             |     1|
+|37    |      \genblk1[36].f    |FlipFlop_735             |     1|
+|38    |      \genblk1[37].f    |FlipFlop_736             |     1|
+|39    |      \genblk1[38].f    |FlipFlop_737             |     1|
+|40    |      \genblk1[39].f    |FlipFlop_738             |    19|
+|41    |      \genblk1[3].f     |FlipFlop_739             |     1|
+|42    |      \genblk1[40].f    |FlipFlop_740             |    19|
+|43    |      \genblk1[41].f    |FlipFlop_741             |    12|
+|44    |      \genblk1[42].f    |FlipFlop_742             |     6|
+|45    |      \genblk1[43].f    |FlipFlop_743             |    15|
+|46    |      \genblk1[44].f    |FlipFlop_744             |    16|
+|47    |      \genblk1[45].f    |FlipFlop_745             |     1|
+|48    |      \genblk1[46].f    |FlipFlop_746             |     1|
+|49    |      \genblk1[47].f    |FlipFlop_747             |     1|
+|50    |      \genblk1[48].f    |FlipFlop_748             |     1|
+|51    |      \genblk1[49].f    |FlipFlop_749             |     1|
+|52    |      \genblk1[50].f    |FlipFlop_750             |     1|
+|53    |      \genblk1[51].f    |FlipFlop_751             |     1|
+|54    |      \genblk1[52].f    |FlipFlop_752             |     1|
+|55    |      \genblk1[53].f    |FlipFlop_753             |     1|
+|56    |      \genblk1[54].f    |FlipFlop_754             |     1|
+|57    |      \genblk1[55].f    |FlipFlop_755             |     1|
+|58    |      \genblk1[56].f    |FlipFlop_756             |     1|
+|59    |      \genblk1[57].f    |FlipFlop_757             |     1|
+|60    |      \genblk1[58].f    |FlipFlop_758             |     1|
+|61    |      \genblk1[59].f    |FlipFlop_759             |     1|
+|62    |      \genblk1[5].f     |FlipFlop_760             |     1|
+|63    |      \genblk1[60].f    |FlipFlop_761             |     1|
+|64    |      \genblk1[61].f    |FlipFlop_762             |     1|
+|65    |      \genblk1[62].f    |FlipFlop_763             |     1|
+|66    |      \genblk1[63].f    |FlipFlop_764             |     1|
+|67    |      \genblk1[64].f    |FlipFlop_765             |     1|
+|68    |      \genblk1[65].f    |FlipFlop_766             |     1|
+|69    |      \genblk1[66].f    |FlipFlop_767             |     1|
+|70    |      \genblk1[67].f    |FlipFlop_768             |     1|
+|71    |      \genblk1[68].f    |FlipFlop_769             |     1|
+|72    |      \genblk1[69].f    |FlipFlop_770             |     2|
+|73    |      \genblk1[6].f     |FlipFlop_771             |     1|
+|74    |      \genblk1[71].f    |FlipFlop_772             |     2|
+|75    |      \genblk1[72].f    |FlipFlop_773             |     2|
+|76    |      \genblk1[73].f    |FlipFlop_774             |     2|
+|77    |      \genblk1[74].f    |FlipFlop_775             |     2|
+|78    |      \genblk1[75].f    |FlipFlop_776             |     1|
+|79    |      \genblk1[76].f    |FlipFlop_777             |     1|
+|80    |      \genblk1[77].f    |FlipFlop_778             |     2|
+|81    |      \genblk1[78].f    |FlipFlop_779             |     2|
+|82    |      \genblk1[79].f    |FlipFlop_780             |     2|
+|83    |      \genblk1[7].f     |FlipFlop_781             |     1|
+|84    |      \genblk1[80].f    |FlipFlop_782             |     2|
+|85    |      \genblk1[81].f    |FlipFlop_783             |     1|
+|86    |      \genblk1[82].f    |FlipFlop_784             |     2|
+|87    |      \genblk1[8].f     |FlipFlop_785             |     1|
+|88    |      \genblk1[9].f     |FlipFlop_786             |     1|
+|89    |    ID_EX               |RegWLoad__parameterized1 |   367|
+|90    |      \genblk1[0].f     |FlipFlop_606             |     1|
+|91    |      \genblk1[100].f   |FlipFlop_607             |     2|
+|92    |      \genblk1[101].f   |FlipFlop_608             |     1|
+|93    |      \genblk1[102].f   |FlipFlop_609             |     3|
+|94    |      \genblk1[103].f   |FlipFlop_610             |     2|
+|95    |      \genblk1[104].f   |FlipFlop_611             |     1|
+|96    |      \genblk1[105].f   |FlipFlop_612             |     2|
+|97    |      \genblk1[106].f   |FlipFlop_613             |     2|
+|98    |      \genblk1[107].f   |FlipFlop_614             |     3|
+|99    |      \genblk1[108].f   |FlipFlop_615             |     2|
+|100   |      \genblk1[109].f   |FlipFlop_616             |     2|
+|101   |      \genblk1[110].f   |FlipFlop_617             |     2|
+|102   |      \genblk1[111].f   |FlipFlop_618             |     2|
+|103   |      \genblk1[112].f   |FlipFlop_619             |     3|
+|104   |      \genblk1[113].f   |FlipFlop_620             |     2|
+|105   |      \genblk1[114].f   |FlipFlop_621             |     1|
+|106   |      \genblk1[116].f   |FlipFlop_622             |     4|
+|107   |      \genblk1[117].f   |FlipFlop_623             |     1|
+|108   |      \genblk1[118].f   |FlipFlop_624             |     1|
+|109   |      \genblk1[119].f   |FlipFlop_625             |     1|
+|110   |      \genblk1[120].f   |FlipFlop_626             |     2|
+|111   |      \genblk1[121].f   |FlipFlop_627             |     2|
+|112   |      \genblk1[122].f   |FlipFlop_628             |     3|
+|113   |      \genblk1[123].f   |FlipFlop_629             |     4|
+|114   |      \genblk1[124].f   |FlipFlop_630             |     2|
+|115   |      \genblk1[125].f   |FlipFlop_631             |     1|
+|116   |      \genblk1[126].f   |FlipFlop_632             |     1|
+|117   |      \genblk1[127].f   |FlipFlop_633             |     2|
+|118   |      \genblk1[147].f   |FlipFlop_634             |     2|
+|119   |      \genblk1[148].f   |FlipFlop_635             |     1|
+|120   |      \genblk1[149].f   |FlipFlop_636             |     2|
+|121   |      \genblk1[150].f   |FlipFlop_637             |     1|
+|122   |      \genblk1[151].f   |FlipFlop_638             |     1|
+|123   |      \genblk1[154].f   |FlipFlop_639             |     1|
+|124   |      \genblk1[15].f    |FlipFlop_640             |    12|
+|125   |      \genblk1[16].f    |FlipFlop_641             |    96|
+|126   |      \genblk1[17].f    |FlipFlop_642             |     1|
+|127   |      \genblk1[18].f    |FlipFlop_643             |     1|
+|128   |      \genblk1[19].f    |FlipFlop_644             |     8|
+|129   |      \genblk1[1].f     |FlipFlop_645             |     1|
+|130   |      \genblk1[20].f    |FlipFlop_646             |     5|
+|131   |      \genblk1[21].f    |FlipFlop_647             |     3|
+|132   |      \genblk1[22].f    |FlipFlop_648             |     3|
+|133   |      \genblk1[28].f    |FlipFlop_649             |     7|
+|134   |      \genblk1[29].f    |FlipFlop_650             |     2|
+|135   |      \genblk1[2].f     |FlipFlop_651             |     1|
+|136   |      \genblk1[3].f     |FlipFlop_652             |     1|
+|137   |      \genblk1[51].f    |FlipFlop_653             |     1|
+|138   |      \genblk1[52].f    |FlipFlop_654             |     1|
+|139   |      \genblk1[53].f    |FlipFlop_655             |     1|
+|140   |      \genblk1[54].f    |FlipFlop_656             |     1|
+|141   |      \genblk1[55].f    |FlipFlop_657             |     2|
+|142   |      \genblk1[56].f    |FlipFlop_658             |     4|
+|143   |      \genblk1[57].f    |FlipFlop_659             |     4|
+|144   |      \genblk1[58].f    |FlipFlop_660             |     5|
+|145   |      \genblk1[59].f    |FlipFlop_661             |     5|
+|146   |      \genblk1[60].f    |FlipFlop_662             |     1|
+|147   |      \genblk1[61].f    |FlipFlop_663             |     1|
+|148   |      \genblk1[62].f    |FlipFlop_664             |     2|
+|149   |      \genblk1[63].f    |FlipFlop_665             |    25|
+|150   |      \genblk1[64].f    |FlipFlop_666             |     2|
+|151   |      \genblk1[65].f    |FlipFlop_667             |     2|
+|152   |      \genblk1[66].f    |FlipFlop_668             |     2|
+|153   |      \genblk1[67].f    |FlipFlop_669             |     2|
+|154   |      \genblk1[68].f    |FlipFlop_670             |     2|
+|155   |      \genblk1[69].f    |FlipFlop_671             |     2|
+|156   |      \genblk1[70].f    |FlipFlop_672             |     2|
+|157   |      \genblk1[71].f    |FlipFlop_673             |     2|
+|158   |      \genblk1[72].f    |FlipFlop_674             |     2|
+|159   |      \genblk1[73].f    |FlipFlop_675             |     2|
+|160   |      \genblk1[74].f    |FlipFlop_676             |     2|
+|161   |      \genblk1[75].f    |FlipFlop_677             |     2|
+|162   |      \genblk1[76].f    |FlipFlop_678             |     2|
+|163   |      \genblk1[77].f    |FlipFlop_679             |     2|
+|164   |      \genblk1[78].f    |FlipFlop_680             |     2|
+|165   |      \genblk1[79].f    |FlipFlop_681             |     2|
+|166   |      \genblk1[80].f    |FlipFlop_682             |     2|
+|167   |      \genblk1[81].f    |FlipFlop_683             |     1|
+|168   |      \genblk1[82].f    |FlipFlop_684             |     1|
+|169   |      \genblk1[83].f    |FlipFlop_685             |     6|
+|170   |      \genblk1[84].f    |FlipFlop_686             |     6|
+|171   |      \genblk1[85].f    |FlipFlop_687             |     9|
+|172   |      \genblk1[86].f    |FlipFlop_688             |     6|
+|173   |      \genblk1[87].f    |FlipFlop_689             |     6|
+|174   |      \genblk1[88].f    |FlipFlop_690             |     6|
+|175   |      \genblk1[89].f    |FlipFlop_691             |     1|
+|176   |      \genblk1[90].f    |FlipFlop_692             |     3|
+|177   |      \genblk1[91].f    |FlipFlop_693             |     1|
+|178   |      \genblk1[92].f    |FlipFlop_694             |    21|
+|179   |      \genblk1[93].f    |FlipFlop_695             |     1|
+|180   |      \genblk1[94].f    |FlipFlop_696             |     1|
+|181   |      \genblk1[95].f    |FlipFlop_697             |     1|
+|182   |      \genblk1[96].f    |FlipFlop_698             |     1|
+|183   |      \genblk1[97].f    |FlipFlop_699             |     3|
+|184   |      \genblk1[98].f    |FlipFlop_700             |     1|
+|185   |      \genblk1[99].f    |FlipFlop_701             |     1|
+|186   |    IF_ID               |RegWLoad__parameterized0 |    49|
+|187   |      \genblk1[10].f    |FlipFlop_576             |     2|
+|188   |      \genblk1[12].f    |FlipFlop_577             |     1|
+|189   |      \genblk1[13].f    |FlipFlop_578             |     1|
+|190   |      \genblk1[14].f    |FlipFlop_579             |     1|
+|191   |      \genblk1[15].f    |FlipFlop_580             |     1|
+|192   |      \genblk1[16].f    |FlipFlop_581             |     1|
+|193   |      \genblk1[17].f    |FlipFlop_582             |     1|
+|194   |      \genblk1[20].f    |FlipFlop_583             |     1|
+|195   |      \genblk1[21].f    |FlipFlop_584             |     2|
+|196   |      \genblk1[22].f    |FlipFlop_585             |     1|
+|197   |      \genblk1[23].f    |FlipFlop_586             |     2|
+|198   |      \genblk1[30].f    |FlipFlop_587             |     1|
+|199   |      \genblk1[33].f    |FlipFlop_588             |     1|
+|200   |      \genblk1[34].f    |FlipFlop_589             |     1|
+|201   |      \genblk1[35].f    |FlipFlop_590             |     1|
+|202   |      \genblk1[36].f    |FlipFlop_591             |     1|
+|203   |      \genblk1[37].f    |FlipFlop_592             |     1|
+|204   |      \genblk1[38].f    |FlipFlop_593             |     1|
+|205   |      \genblk1[39].f    |FlipFlop_594             |     1|
+|206   |      \genblk1[40].f    |FlipFlop_595             |     1|
+|207   |      \genblk1[41].f    |FlipFlop_596             |     1|
+|208   |      \genblk1[42].f    |FlipFlop_597             |     1|
+|209   |      \genblk1[43].f    |FlipFlop_598             |     1|
+|210   |      \genblk1[44].f    |FlipFlop_599             |     1|
+|211   |      \genblk1[4].f     |FlipFlop_600             |     7|
+|212   |      \genblk1[5].f     |FlipFlop_601             |     5|
+|213   |      \genblk1[6].f     |FlipFlop_602             |     4|
+|214   |      \genblk1[7].f     |FlipFlop_603             |     2|
+|215   |      \genblk1[8].f     |FlipFlop_604             |     2|
+|216   |      \genblk1[9].f     |FlipFlop_605             |     2|
+|217   |    MEM_WB              |RegWLoad__parameterized3 |   118|
+|218   |      \genblk1[0].f     |FlipFlop_506             |     1|
+|219   |      \genblk1[10].f    |FlipFlop_507             |     1|
+|220   |      \genblk1[11].f    |FlipFlop_508             |     1|
+|221   |      \genblk1[12].f    |FlipFlop_509             |     1|
+|222   |      \genblk1[13].f    |FlipFlop_510             |     1|
+|223   |      \genblk1[14].f    |FlipFlop_511             |     1|
+|224   |      \genblk1[15].f    |FlipFlop_512             |     1|
+|225   |      \genblk1[16].f    |FlipFlop_513             |     1|
+|226   |      \genblk1[17].f    |FlipFlop_514             |     1|
+|227   |      \genblk1[18].f    |FlipFlop_515             |     1|
+|228   |      \genblk1[19].f    |FlipFlop_516             |     1|
+|229   |      \genblk1[1].f     |FlipFlop_517             |     1|
+|230   |      \genblk1[20].f    |FlipFlop_518             |     1|
+|231   |      \genblk1[21].f    |FlipFlop_519             |     1|
+|232   |      \genblk1[22].f    |FlipFlop_520             |     1|
+|233   |      \genblk1[23].f    |FlipFlop_521             |     1|
+|234   |      \genblk1[24].f    |FlipFlop_522             |     1|
+|235   |      \genblk1[25].f    |FlipFlop_523             |     1|
+|236   |      \genblk1[26].f    |FlipFlop_524             |     1|
+|237   |      \genblk1[27].f    |FlipFlop_525             |     1|
+|238   |      \genblk1[28].f    |FlipFlop_526             |     1|
+|239   |      \genblk1[29].f    |FlipFlop_527             |     1|
+|240   |      \genblk1[2].f     |FlipFlop_528             |     1|
+|241   |      \genblk1[30].f    |FlipFlop_529             |     1|
+|242   |      \genblk1[31].f    |FlipFlop_530             |     1|
+|243   |      \genblk1[32].f    |FlipFlop_531             |     1|
+|244   |      \genblk1[33].f    |FlipFlop_532             |     1|
+|245   |      \genblk1[34].f    |FlipFlop_533             |     1|
+|246   |      \genblk1[35].f    |FlipFlop_534             |     1|
+|247   |      \genblk1[36].f    |FlipFlop_535             |     1|
+|248   |      \genblk1[37].f    |FlipFlop_536             |     2|
+|249   |      \genblk1[38].f    |FlipFlop_537             |     2|
+|250   |      \genblk1[39].f    |FlipFlop_538             |     2|
+|251   |      \genblk1[3].f     |FlipFlop_539             |     1|
+|252   |      \genblk1[40].f    |FlipFlop_540             |     2|
+|253   |      \genblk1[41].f    |FlipFlop_541             |     2|
+|254   |      \genblk1[42].f    |FlipFlop_542             |     2|
+|255   |      \genblk1[43].f    |FlipFlop_543             |     2|
+|256   |      \genblk1[44].f    |FlipFlop_544             |     2|
+|257   |      \genblk1[45].f    |FlipFlop_545             |     2|
+|258   |      \genblk1[46].f    |FlipFlop_546             |     3|
+|259   |      \genblk1[47].f    |FlipFlop_547             |     2|
+|260   |      \genblk1[48].f    |FlipFlop_548             |     2|
+|261   |      \genblk1[49].f    |FlipFlop_549             |     2|
+|262   |      \genblk1[50].f    |FlipFlop_550             |     2|
+|263   |      \genblk1[51].f    |FlipFlop_551             |     2|
+|264   |      \genblk1[52].f    |FlipFlop_552             |     2|
+|265   |      \genblk1[53].f    |FlipFlop_553             |     2|
+|266   |      \genblk1[54].f    |FlipFlop_554             |     2|
+|267   |      \genblk1[55].f    |FlipFlop_555             |     2|
+|268   |      \genblk1[56].f    |FlipFlop_556             |     2|
+|269   |      \genblk1[57].f    |FlipFlop_557             |     2|
+|270   |      \genblk1[58].f    |FlipFlop_558             |     2|
+|271   |      \genblk1[59].f    |FlipFlop_559             |     2|
+|272   |      \genblk1[5].f     |FlipFlop_560             |     1|
+|273   |      \genblk1[60].f    |FlipFlop_561             |     2|
+|274   |      \genblk1[61].f    |FlipFlop_562             |     2|
+|275   |      \genblk1[62].f    |FlipFlop_563             |     2|
+|276   |      \genblk1[63].f    |FlipFlop_564             |     2|
+|277   |      \genblk1[64].f    |FlipFlop_565             |     2|
+|278   |      \genblk1[65].f    |FlipFlop_566             |     2|
+|279   |      \genblk1[66].f    |FlipFlop_567             |     2|
+|280   |      \genblk1[67].f    |FlipFlop_568             |     2|
+|281   |      \genblk1[68].f    |FlipFlop_569             |     2|
+|282   |      \genblk1[69].f    |FlipFlop_570             |     1|
+|283   |      \genblk1[6].f     |FlipFlop_571             |     1|
+|284   |      \genblk1[70].f    |FlipFlop_572             |    16|
+|285   |      \genblk1[7].f     |FlipFlop_573             |     1|
+|286   |      \genblk1[8].f     |FlipFlop_574             |     1|
+|287   |      \genblk1[9].f     |FlipFlop_575             |     1|
+|288   |    PC                  |RegWLoad                 |    61|
+|289   |      \genblk1[10].f    |FlipFlop_494             |     2|
+|290   |      \genblk1[11].f    |FlipFlop_495             |     3|
+|291   |      \genblk1[12].f    |FlipFlop_496             |     3|
+|292   |      \genblk1[1].f     |FlipFlop_497             |     1|
+|293   |      \genblk1[2].f     |FlipFlop_498             |     2|
+|294   |      \genblk1[3].f     |FlipFlop_499             |     3|
+|295   |      \genblk1[4].f     |FlipFlop_500             |     2|
+|296   |      \genblk1[5].f     |FlipFlop_501             |     4|
+|297   |      \genblk1[6].f     |FlipFlop_502             |    29|
+|298   |      \genblk1[7].f     |FlipFlop_503             |     6|
+|299   |      \genblk1[8].f     |FlipFlop_504             |     3|
+|300   |      \genblk1[9].f     |FlipFlop_505             |     3|
+|301   |    dmem                |DataMem                  |  2944|
+|302   |    rf                  |RegFile                  |   813|
+|303   |      \genblk1[10].ri   |RegWLoad_0               |    32|
+|304   |        \genblk1[0].f   |FlipFlop_462             |     1|
+|305   |        \genblk1[10].f  |FlipFlop_463             |     1|
+|306   |        \genblk1[11].f  |FlipFlop_464             |     1|
+|307   |        \genblk1[12].f  |FlipFlop_465             |     1|
+|308   |        \genblk1[13].f  |FlipFlop_466             |     1|
+|309   |        \genblk1[14].f  |FlipFlop_467             |     1|
+|310   |        \genblk1[15].f  |FlipFlop_468             |     1|
+|311   |        \genblk1[16].f  |FlipFlop_469             |     1|
+|312   |        \genblk1[17].f  |FlipFlop_470             |     1|
+|313   |        \genblk1[18].f  |FlipFlop_471             |     1|
+|314   |        \genblk1[19].f  |FlipFlop_472             |     1|
+|315   |        \genblk1[1].f   |FlipFlop_473             |     1|
+|316   |        \genblk1[20].f  |FlipFlop_474             |     1|
+|317   |        \genblk1[21].f  |FlipFlop_475             |     1|
+|318   |        \genblk1[22].f  |FlipFlop_476             |     1|
+|319   |        \genblk1[23].f  |FlipFlop_477             |     1|
+|320   |        \genblk1[24].f  |FlipFlop_478             |     1|
+|321   |        \genblk1[25].f  |FlipFlop_479             |     1|
+|322   |        \genblk1[26].f  |FlipFlop_480             |     1|
+|323   |        \genblk1[27].f  |FlipFlop_481             |     1|
+|324   |        \genblk1[28].f  |FlipFlop_482             |     1|
+|325   |        \genblk1[29].f  |FlipFlop_483             |     1|
+|326   |        \genblk1[2].f   |FlipFlop_484             |     1|
+|327   |        \genblk1[30].f  |FlipFlop_485             |     1|
+|328   |        \genblk1[31].f  |FlipFlop_486             |     1|
+|329   |        \genblk1[3].f   |FlipFlop_487             |     1|
+|330   |        \genblk1[4].f   |FlipFlop_488             |     1|
+|331   |        \genblk1[5].f   |FlipFlop_489             |     1|
+|332   |        \genblk1[6].f   |FlipFlop_490             |     1|
+|333   |        \genblk1[7].f   |FlipFlop_491             |     1|
+|334   |        \genblk1[8].f   |FlipFlop_492             |     1|
+|335   |        \genblk1[9].f   |FlipFlop_493             |     1|
+|336   |      \genblk1[11].ri   |RegWLoad_1               |    96|
+|337   |        \genblk1[0].f   |FlipFlop_430             |     3|
+|338   |        \genblk1[10].f  |FlipFlop_431             |     3|
+|339   |        \genblk1[11].f  |FlipFlop_432             |     3|
+|340   |        \genblk1[12].f  |FlipFlop_433             |     3|
+|341   |        \genblk1[13].f  |FlipFlop_434             |     3|
+|342   |        \genblk1[14].f  |FlipFlop_435             |     3|
+|343   |        \genblk1[15].f  |FlipFlop_436             |     3|
+|344   |        \genblk1[16].f  |FlipFlop_437             |     3|
+|345   |        \genblk1[17].f  |FlipFlop_438             |     3|
+|346   |        \genblk1[18].f  |FlipFlop_439             |     3|
+|347   |        \genblk1[19].f  |FlipFlop_440             |     3|
+|348   |        \genblk1[1].f   |FlipFlop_441             |     3|
+|349   |        \genblk1[20].f  |FlipFlop_442             |     3|
+|350   |        \genblk1[21].f  |FlipFlop_443             |     3|
+|351   |        \genblk1[22].f  |FlipFlop_444             |     3|
+|352   |        \genblk1[23].f  |FlipFlop_445             |     3|
+|353   |        \genblk1[24].f  |FlipFlop_446             |     3|
+|354   |        \genblk1[25].f  |FlipFlop_447             |     3|
+|355   |        \genblk1[26].f  |FlipFlop_448             |     3|
+|356   |        \genblk1[27].f  |FlipFlop_449             |     3|
+|357   |        \genblk1[28].f  |FlipFlop_450             |     3|
+|358   |        \genblk1[29].f  |FlipFlop_451             |     3|
+|359   |        \genblk1[2].f   |FlipFlop_452             |     3|
+|360   |        \genblk1[30].f  |FlipFlop_453             |     3|
+|361   |        \genblk1[31].f  |FlipFlop_454             |     3|
+|362   |        \genblk1[3].f   |FlipFlop_455             |     3|
+|363   |        \genblk1[4].f   |FlipFlop_456             |     3|
+|364   |        \genblk1[5].f   |FlipFlop_457             |     3|
+|365   |        \genblk1[6].f   |FlipFlop_458             |     3|
+|366   |        \genblk1[7].f   |FlipFlop_459             |     3|
+|367   |        \genblk1[8].f   |FlipFlop_460             |     3|
+|368   |        \genblk1[9].f   |FlipFlop_461             |     3|
+|369   |      \genblk1[12].ri   |RegWLoad_2               |    32|
+|370   |        \genblk1[0].f   |FlipFlop_398             |     1|
+|371   |        \genblk1[10].f  |FlipFlop_399             |     1|
+|372   |        \genblk1[11].f  |FlipFlop_400             |     1|
+|373   |        \genblk1[12].f  |FlipFlop_401             |     1|
+|374   |        \genblk1[13].f  |FlipFlop_402             |     1|
+|375   |        \genblk1[14].f  |FlipFlop_403             |     1|
+|376   |        \genblk1[15].f  |FlipFlop_404             |     1|
+|377   |        \genblk1[16].f  |FlipFlop_405             |     1|
+|378   |        \genblk1[17].f  |FlipFlop_406             |     1|
+|379   |        \genblk1[18].f  |FlipFlop_407             |     1|
+|380   |        \genblk1[19].f  |FlipFlop_408             |     1|
+|381   |        \genblk1[1].f   |FlipFlop_409             |     1|
+|382   |        \genblk1[20].f  |FlipFlop_410             |     1|
+|383   |        \genblk1[21].f  |FlipFlop_411             |     1|
+|384   |        \genblk1[22].f  |FlipFlop_412             |     1|
+|385   |        \genblk1[23].f  |FlipFlop_413             |     1|
+|386   |        \genblk1[24].f  |FlipFlop_414             |     1|
+|387   |        \genblk1[25].f  |FlipFlop_415             |     1|
+|388   |        \genblk1[26].f  |FlipFlop_416             |     1|
+|389   |        \genblk1[27].f  |FlipFlop_417             |     1|
+|390   |        \genblk1[28].f  |FlipFlop_418             |     1|
+|391   |        \genblk1[29].f  |FlipFlop_419             |     1|
+|392   |        \genblk1[2].f   |FlipFlop_420             |     1|
+|393   |        \genblk1[30].f  |FlipFlop_421             |     1|
+|394   |        \genblk1[31].f  |FlipFlop_422             |     1|
+|395   |        \genblk1[3].f   |FlipFlop_423             |     1|
+|396   |        \genblk1[4].f   |FlipFlop_424             |     1|
+|397   |        \genblk1[5].f   |FlipFlop_425             |     1|
+|398   |        \genblk1[6].f   |FlipFlop_426             |     1|
+|399   |        \genblk1[7].f   |FlipFlop_427             |     1|
+|400   |        \genblk1[8].f   |FlipFlop_428             |     1|
+|401   |        \genblk1[9].f   |FlipFlop_429             |     1|
+|402   |      \genblk1[13].ri   |RegWLoad_3               |    32|
+|403   |        \genblk1[0].f   |FlipFlop_366             |     1|
+|404   |        \genblk1[10].f  |FlipFlop_367             |     1|
+|405   |        \genblk1[11].f  |FlipFlop_368             |     1|
+|406   |        \genblk1[12].f  |FlipFlop_369             |     1|
+|407   |        \genblk1[13].f  |FlipFlop_370             |     1|
+|408   |        \genblk1[14].f  |FlipFlop_371             |     1|
+|409   |        \genblk1[15].f  |FlipFlop_372             |     1|
+|410   |        \genblk1[16].f  |FlipFlop_373             |     1|
+|411   |        \genblk1[17].f  |FlipFlop_374             |     1|
+|412   |        \genblk1[18].f  |FlipFlop_375             |     1|
+|413   |        \genblk1[19].f  |FlipFlop_376             |     1|
+|414   |        \genblk1[1].f   |FlipFlop_377             |     1|
+|415   |        \genblk1[20].f  |FlipFlop_378             |     1|
+|416   |        \genblk1[21].f  |FlipFlop_379             |     1|
+|417   |        \genblk1[22].f  |FlipFlop_380             |     1|
+|418   |        \genblk1[23].f  |FlipFlop_381             |     1|
+|419   |        \genblk1[24].f  |FlipFlop_382             |     1|
+|420   |        \genblk1[25].f  |FlipFlop_383             |     1|
+|421   |        \genblk1[26].f  |FlipFlop_384             |     1|
+|422   |        \genblk1[27].f  |FlipFlop_385             |     1|
+|423   |        \genblk1[28].f  |FlipFlop_386             |     1|
+|424   |        \genblk1[29].f  |FlipFlop_387             |     1|
+|425   |        \genblk1[2].f   |FlipFlop_388             |     1|
+|426   |        \genblk1[30].f  |FlipFlop_389             |     1|
+|427   |        \genblk1[31].f  |FlipFlop_390             |     1|
+|428   |        \genblk1[3].f   |FlipFlop_391             |     1|
+|429   |        \genblk1[4].f   |FlipFlop_392             |     1|
+|430   |        \genblk1[5].f   |FlipFlop_393             |     1|
+|431   |        \genblk1[6].f   |FlipFlop_394             |     1|
+|432   |        \genblk1[7].f   |FlipFlop_395             |     1|
+|433   |        \genblk1[8].f   |FlipFlop_396             |     1|
+|434   |        \genblk1[9].f   |FlipFlop_397             |     1|
+|435   |      \genblk1[14].ri   |RegWLoad_4               |    32|
+|436   |        \genblk1[0].f   |FlipFlop_334             |     1|
+|437   |        \genblk1[10].f  |FlipFlop_335             |     1|
+|438   |        \genblk1[11].f  |FlipFlop_336             |     1|
+|439   |        \genblk1[12].f  |FlipFlop_337             |     1|
+|440   |        \genblk1[13].f  |FlipFlop_338             |     1|
+|441   |        \genblk1[14].f  |FlipFlop_339             |     1|
+|442   |        \genblk1[15].f  |FlipFlop_340             |     1|
+|443   |        \genblk1[16].f  |FlipFlop_341             |     1|
+|444   |        \genblk1[17].f  |FlipFlop_342             |     1|
+|445   |        \genblk1[18].f  |FlipFlop_343             |     1|
+|446   |        \genblk1[19].f  |FlipFlop_344             |     1|
+|447   |        \genblk1[1].f   |FlipFlop_345             |     1|
+|448   |        \genblk1[20].f  |FlipFlop_346             |     1|
+|449   |        \genblk1[21].f  |FlipFlop_347             |     1|
+|450   |        \genblk1[22].f  |FlipFlop_348             |     1|
+|451   |        \genblk1[23].f  |FlipFlop_349             |     1|
+|452   |        \genblk1[24].f  |FlipFlop_350             |     1|
+|453   |        \genblk1[25].f  |FlipFlop_351             |     1|
+|454   |        \genblk1[26].f  |FlipFlop_352             |     1|
+|455   |        \genblk1[27].f  |FlipFlop_353             |     1|
+|456   |        \genblk1[28].f  |FlipFlop_354             |     1|
+|457   |        \genblk1[29].f  |FlipFlop_355             |     1|
+|458   |        \genblk1[2].f   |FlipFlop_356             |     1|
+|459   |        \genblk1[30].f  |FlipFlop_357             |     1|
+|460   |        \genblk1[31].f  |FlipFlop_358             |     1|
+|461   |        \genblk1[3].f   |FlipFlop_359             |     1|
+|462   |        \genblk1[4].f   |FlipFlop_360             |     1|
+|463   |        \genblk1[5].f   |FlipFlop_361             |     1|
+|464   |        \genblk1[6].f   |FlipFlop_362             |     1|
+|465   |        \genblk1[7].f   |FlipFlop_363             |     1|
+|466   |        \genblk1[8].f   |FlipFlop_364             |     1|
+|467   |        \genblk1[9].f   |FlipFlop_365             |     1|
+|468   |      \genblk1[15].ri   |RegWLoad_5               |    64|
+|469   |        \genblk1[0].f   |FlipFlop_302             |     2|
+|470   |        \genblk1[10].f  |FlipFlop_303             |     2|
+|471   |        \genblk1[11].f  |FlipFlop_304             |     2|
+|472   |        \genblk1[12].f  |FlipFlop_305             |     2|
+|473   |        \genblk1[13].f  |FlipFlop_306             |     2|
+|474   |        \genblk1[14].f  |FlipFlop_307             |     2|
+|475   |        \genblk1[15].f  |FlipFlop_308             |     2|
+|476   |        \genblk1[16].f  |FlipFlop_309             |     2|
+|477   |        \genblk1[17].f  |FlipFlop_310             |     2|
+|478   |        \genblk1[18].f  |FlipFlop_311             |     2|
+|479   |        \genblk1[19].f  |FlipFlop_312             |     2|
+|480   |        \genblk1[1].f   |FlipFlop_313             |     2|
+|481   |        \genblk1[20].f  |FlipFlop_314             |     2|
+|482   |        \genblk1[21].f  |FlipFlop_315             |     2|
+|483   |        \genblk1[22].f  |FlipFlop_316             |     2|
+|484   |        \genblk1[23].f  |FlipFlop_317             |     2|
+|485   |        \genblk1[24].f  |FlipFlop_318             |     2|
+|486   |        \genblk1[25].f  |FlipFlop_319             |     2|
+|487   |        \genblk1[26].f  |FlipFlop_320             |     2|
+|488   |        \genblk1[27].f  |FlipFlop_321             |     2|
+|489   |        \genblk1[28].f  |FlipFlop_322             |     2|
+|490   |        \genblk1[29].f  |FlipFlop_323             |     2|
+|491   |        \genblk1[2].f   |FlipFlop_324             |     2|
+|492   |        \genblk1[30].f  |FlipFlop_325             |     2|
+|493   |        \genblk1[31].f  |FlipFlop_326             |     2|
+|494   |        \genblk1[3].f   |FlipFlop_327             |     2|
+|495   |        \genblk1[4].f   |FlipFlop_328             |     2|
+|496   |        \genblk1[5].f   |FlipFlop_329             |     2|
+|497   |        \genblk1[6].f   |FlipFlop_330             |     2|
+|498   |        \genblk1[7].f   |FlipFlop_331             |     2|
+|499   |        \genblk1[8].f   |FlipFlop_332             |     2|
+|500   |        \genblk1[9].f   |FlipFlop_333             |     2|
+|501   |      \genblk1[1].ri    |RegWLoad_6               |    32|
+|502   |        \genblk1[0].f   |FlipFlop_270             |     1|
+|503   |        \genblk1[10].f  |FlipFlop_271             |     1|
+|504   |        \genblk1[11].f  |FlipFlop_272             |     1|
+|505   |        \genblk1[12].f  |FlipFlop_273             |     1|
+|506   |        \genblk1[13].f  |FlipFlop_274             |     1|
+|507   |        \genblk1[14].f  |FlipFlop_275             |     1|
+|508   |        \genblk1[15].f  |FlipFlop_276             |     1|
+|509   |        \genblk1[16].f  |FlipFlop_277             |     1|
+|510   |        \genblk1[17].f  |FlipFlop_278             |     1|
+|511   |        \genblk1[18].f  |FlipFlop_279             |     1|
+|512   |        \genblk1[19].f  |FlipFlop_280             |     1|
+|513   |        \genblk1[1].f   |FlipFlop_281             |     1|
+|514   |        \genblk1[20].f  |FlipFlop_282             |     1|
+|515   |        \genblk1[21].f  |FlipFlop_283             |     1|
+|516   |        \genblk1[22].f  |FlipFlop_284             |     1|
+|517   |        \genblk1[23].f  |FlipFlop_285             |     1|
+|518   |        \genblk1[24].f  |FlipFlop_286             |     1|
+|519   |        \genblk1[25].f  |FlipFlop_287             |     1|
+|520   |        \genblk1[26].f  |FlipFlop_288             |     1|
+|521   |        \genblk1[27].f  |FlipFlop_289             |     1|
+|522   |        \genblk1[28].f  |FlipFlop_290             |     1|
+|523   |        \genblk1[29].f  |FlipFlop_291             |     1|
+|524   |        \genblk1[2].f   |FlipFlop_292             |     1|
+|525   |        \genblk1[30].f  |FlipFlop_293             |     1|
+|526   |        \genblk1[31].f  |FlipFlop_294             |     1|
+|527   |        \genblk1[3].f   |FlipFlop_295             |     1|
+|528   |        \genblk1[4].f   |FlipFlop_296             |     1|
+|529   |        \genblk1[5].f   |FlipFlop_297             |     1|
+|530   |        \genblk1[6].f   |FlipFlop_298             |     1|
+|531   |        \genblk1[7].f   |FlipFlop_299             |     1|
+|532   |        \genblk1[8].f   |FlipFlop_300             |     1|
+|533   |        \genblk1[9].f   |FlipFlop_301             |     1|
+|534   |      \genblk1[2].ri    |RegWLoad_7               |    32|
+|535   |        \genblk1[0].f   |FlipFlop_238             |     1|
+|536   |        \genblk1[10].f  |FlipFlop_239             |     1|
+|537   |        \genblk1[11].f  |FlipFlop_240             |     1|
+|538   |        \genblk1[12].f  |FlipFlop_241             |     1|
+|539   |        \genblk1[13].f  |FlipFlop_242             |     1|
+|540   |        \genblk1[14].f  |FlipFlop_243             |     1|
+|541   |        \genblk1[15].f  |FlipFlop_244             |     1|
+|542   |        \genblk1[16].f  |FlipFlop_245             |     1|
+|543   |        \genblk1[17].f  |FlipFlop_246             |     1|
+|544   |        \genblk1[18].f  |FlipFlop_247             |     1|
+|545   |        \genblk1[19].f  |FlipFlop_248             |     1|
+|546   |        \genblk1[1].f   |FlipFlop_249             |     1|
+|547   |        \genblk1[20].f  |FlipFlop_250             |     1|
+|548   |        \genblk1[21].f  |FlipFlop_251             |     1|
+|549   |        \genblk1[22].f  |FlipFlop_252             |     1|
+|550   |        \genblk1[23].f  |FlipFlop_253             |     1|
+|551   |        \genblk1[24].f  |FlipFlop_254             |     1|
+|552   |        \genblk1[25].f  |FlipFlop_255             |     1|
+|553   |        \genblk1[26].f  |FlipFlop_256             |     1|
+|554   |        \genblk1[27].f  |FlipFlop_257             |     1|
+|555   |        \genblk1[28].f  |FlipFlop_258             |     1|
+|556   |        \genblk1[29].f  |FlipFlop_259             |     1|
+|557   |        \genblk1[2].f   |FlipFlop_260             |     1|
+|558   |        \genblk1[30].f  |FlipFlop_261             |     1|
+|559   |        \genblk1[31].f  |FlipFlop_262             |     1|
+|560   |        \genblk1[3].f   |FlipFlop_263             |     1|
+|561   |        \genblk1[4].f   |FlipFlop_264             |     1|
+|562   |        \genblk1[5].f   |FlipFlop_265             |     1|
+|563   |        \genblk1[6].f   |FlipFlop_266             |     1|
+|564   |        \genblk1[7].f   |FlipFlop_267             |     1|
+|565   |        \genblk1[8].f   |FlipFlop_268             |     1|
+|566   |        \genblk1[9].f   |FlipFlop_269             |     1|
+|567   |      \genblk1[3].ri    |RegWLoad_8               |   205|
+|568   |        \genblk1[0].f   |FlipFlop_206             |     7|
+|569   |        \genblk1[10].f  |FlipFlop_207             |     7|
+|570   |        \genblk1[11].f  |FlipFlop_208             |     7|
+|571   |        \genblk1[12].f  |FlipFlop_209             |     7|
+|572   |        \genblk1[13].f  |FlipFlop_210             |     6|
+|573   |        \genblk1[14].f  |FlipFlop_211             |     6|
+|574   |        \genblk1[15].f  |FlipFlop_212             |     6|
+|575   |        \genblk1[16].f  |FlipFlop_213             |     6|
+|576   |        \genblk1[17].f  |FlipFlop_214             |     6|
+|577   |        \genblk1[18].f  |FlipFlop_215             |     6|
+|578   |        \genblk1[19].f  |FlipFlop_216             |     6|
+|579   |        \genblk1[1].f   |FlipFlop_217             |     7|
+|580   |        \genblk1[20].f  |FlipFlop_218             |     6|
+|581   |        \genblk1[21].f  |FlipFlop_219             |     6|
+|582   |        \genblk1[22].f  |FlipFlop_220             |     6|
+|583   |        \genblk1[23].f  |FlipFlop_221             |     6|
+|584   |        \genblk1[24].f  |FlipFlop_222             |     6|
+|585   |        \genblk1[25].f  |FlipFlop_223             |     6|
+|586   |        \genblk1[26].f  |FlipFlop_224             |     6|
+|587   |        \genblk1[27].f  |FlipFlop_225             |     6|
+|588   |        \genblk1[28].f  |FlipFlop_226             |     6|
+|589   |        \genblk1[29].f  |FlipFlop_227             |     6|
+|590   |        \genblk1[2].f   |FlipFlop_228             |     7|
+|591   |        \genblk1[30].f  |FlipFlop_229             |     6|
+|592   |        \genblk1[31].f  |FlipFlop_230             |     6|
+|593   |        \genblk1[3].f   |FlipFlop_231             |     7|
+|594   |        \genblk1[4].f   |FlipFlop_232             |     7|
+|595   |        \genblk1[5].f   |FlipFlop_233             |     7|
+|596   |        \genblk1[6].f   |FlipFlop_234             |     7|
+|597   |        \genblk1[7].f   |FlipFlop_235             |     7|
+|598   |        \genblk1[8].f   |FlipFlop_236             |     7|
+|599   |        \genblk1[9].f   |FlipFlop_237             |     7|
+|600   |      \genblk1[4].ri    |RegWLoad_9               |    32|
+|601   |        \genblk1[0].f   |FlipFlop_174             |     1|
+|602   |        \genblk1[10].f  |FlipFlop_175             |     1|
+|603   |        \genblk1[11].f  |FlipFlop_176             |     1|
+|604   |        \genblk1[12].f  |FlipFlop_177             |     1|
+|605   |        \genblk1[13].f  |FlipFlop_178             |     1|
+|606   |        \genblk1[14].f  |FlipFlop_179             |     1|
+|607   |        \genblk1[15].f  |FlipFlop_180             |     1|
+|608   |        \genblk1[16].f  |FlipFlop_181             |     1|
+|609   |        \genblk1[17].f  |FlipFlop_182             |     1|
+|610   |        \genblk1[18].f  |FlipFlop_183             |     1|
+|611   |        \genblk1[19].f  |FlipFlop_184             |     1|
+|612   |        \genblk1[1].f   |FlipFlop_185             |     1|
+|613   |        \genblk1[20].f  |FlipFlop_186             |     1|
+|614   |        \genblk1[21].f  |FlipFlop_187             |     1|
+|615   |        \genblk1[22].f  |FlipFlop_188             |     1|
+|616   |        \genblk1[23].f  |FlipFlop_189             |     1|
+|617   |        \genblk1[24].f  |FlipFlop_190             |     1|
+|618   |        \genblk1[25].f  |FlipFlop_191             |     1|
+|619   |        \genblk1[26].f  |FlipFlop_192             |     1|
+|620   |        \genblk1[27].f  |FlipFlop_193             |     1|
+|621   |        \genblk1[28].f  |FlipFlop_194             |     1|
+|622   |        \genblk1[29].f  |FlipFlop_195             |     1|
+|623   |        \genblk1[2].f   |FlipFlop_196             |     1|
+|624   |        \genblk1[30].f  |FlipFlop_197             |     1|
+|625   |        \genblk1[31].f  |FlipFlop_198             |     1|
+|626   |        \genblk1[3].f   |FlipFlop_199             |     1|
+|627   |        \genblk1[4].f   |FlipFlop_200             |     1|
+|628   |        \genblk1[5].f   |FlipFlop_201             |     1|
+|629   |        \genblk1[6].f   |FlipFlop_202             |     1|
+|630   |        \genblk1[7].f   |FlipFlop_203             |     1|
+|631   |        \genblk1[8].f   |FlipFlop_204             |     1|
+|632   |        \genblk1[9].f   |FlipFlop_205             |     1|
+|633   |      \genblk1[5].ri    |RegWLoad_10              |    32|
+|634   |        \genblk1[0].f   |FlipFlop_142             |     1|
+|635   |        \genblk1[10].f  |FlipFlop_143             |     1|
+|636   |        \genblk1[11].f  |FlipFlop_144             |     1|
+|637   |        \genblk1[12].f  |FlipFlop_145             |     1|
+|638   |        \genblk1[13].f  |FlipFlop_146             |     1|
+|639   |        \genblk1[14].f  |FlipFlop_147             |     1|
+|640   |        \genblk1[15].f  |FlipFlop_148             |     1|
+|641   |        \genblk1[16].f  |FlipFlop_149             |     1|
+|642   |        \genblk1[17].f  |FlipFlop_150             |     1|
+|643   |        \genblk1[18].f  |FlipFlop_151             |     1|
+|644   |        \genblk1[19].f  |FlipFlop_152             |     1|
+|645   |        \genblk1[1].f   |FlipFlop_153             |     1|
+|646   |        \genblk1[20].f  |FlipFlop_154             |     1|
+|647   |        \genblk1[21].f  |FlipFlop_155             |     1|
+|648   |        \genblk1[22].f  |FlipFlop_156             |     1|
+|649   |        \genblk1[23].f  |FlipFlop_157             |     1|
+|650   |        \genblk1[24].f  |FlipFlop_158             |     1|
+|651   |        \genblk1[25].f  |FlipFlop_159             |     1|
+|652   |        \genblk1[26].f  |FlipFlop_160             |     1|
+|653   |        \genblk1[27].f  |FlipFlop_161             |     1|
+|654   |        \genblk1[28].f  |FlipFlop_162             |     1|
+|655   |        \genblk1[29].f  |FlipFlop_163             |     1|
+|656   |        \genblk1[2].f   |FlipFlop_164             |     1|
+|657   |        \genblk1[30].f  |FlipFlop_165             |     1|
+|658   |        \genblk1[31].f  |FlipFlop_166             |     1|
+|659   |        \genblk1[3].f   |FlipFlop_167             |     1|
+|660   |        \genblk1[4].f   |FlipFlop_168             |     1|
+|661   |        \genblk1[5].f   |FlipFlop_169             |     1|
+|662   |        \genblk1[6].f   |FlipFlop_170             |     1|
+|663   |        \genblk1[7].f   |FlipFlop_171             |     1|
+|664   |        \genblk1[8].f   |FlipFlop_172             |     1|
+|665   |        \genblk1[9].f   |FlipFlop_173             |     1|
+|666   |      \genblk1[6].ri    |RegWLoad_11              |    32|
+|667   |        \genblk1[0].f   |FlipFlop_110             |     1|
+|668   |        \genblk1[10].f  |FlipFlop_111             |     1|
+|669   |        \genblk1[11].f  |FlipFlop_112             |     1|
+|670   |        \genblk1[12].f  |FlipFlop_113             |     1|
+|671   |        \genblk1[13].f  |FlipFlop_114             |     1|
+|672   |        \genblk1[14].f  |FlipFlop_115             |     1|
+|673   |        \genblk1[15].f  |FlipFlop_116             |     1|
+|674   |        \genblk1[16].f  |FlipFlop_117             |     1|
+|675   |        \genblk1[17].f  |FlipFlop_118             |     1|
+|676   |        \genblk1[18].f  |FlipFlop_119             |     1|
+|677   |        \genblk1[19].f  |FlipFlop_120             |     1|
+|678   |        \genblk1[1].f   |FlipFlop_121             |     1|
+|679   |        \genblk1[20].f  |FlipFlop_122             |     1|
+|680   |        \genblk1[21].f  |FlipFlop_123             |     1|
+|681   |        \genblk1[22].f  |FlipFlop_124             |     1|
+|682   |        \genblk1[23].f  |FlipFlop_125             |     1|
+|683   |        \genblk1[24].f  |FlipFlop_126             |     1|
+|684   |        \genblk1[25].f  |FlipFlop_127             |     1|
+|685   |        \genblk1[26].f  |FlipFlop_128             |     1|
+|686   |        \genblk1[27].f  |FlipFlop_129             |     1|
+|687   |        \genblk1[28].f  |FlipFlop_130             |     1|
+|688   |        \genblk1[29].f  |FlipFlop_131             |     1|
+|689   |        \genblk1[2].f   |FlipFlop_132             |     1|
+|690   |        \genblk1[30].f  |FlipFlop_133             |     1|
+|691   |        \genblk1[31].f  |FlipFlop_134             |     1|
+|692   |        \genblk1[3].f   |FlipFlop_135             |     1|
+|693   |        \genblk1[4].f   |FlipFlop_136             |     1|
+|694   |        \genblk1[5].f   |FlipFlop_137             |     1|
+|695   |        \genblk1[6].f   |FlipFlop_138             |     1|
+|696   |        \genblk1[7].f   |FlipFlop_139             |     1|
+|697   |        \genblk1[8].f   |FlipFlop_140             |     1|
+|698   |        \genblk1[9].f   |FlipFlop_141             |     1|
+|699   |      \genblk1[7].ri    |RegWLoad_12              |    96|
+|700   |        \genblk1[0].f   |FlipFlop_78              |     3|
+|701   |        \genblk1[10].f  |FlipFlop_79              |     3|
+|702   |        \genblk1[11].f  |FlipFlop_80              |     3|
+|703   |        \genblk1[12].f  |FlipFlop_81              |     3|
+|704   |        \genblk1[13].f  |FlipFlop_82              |     3|
+|705   |        \genblk1[14].f  |FlipFlop_83              |     3|
+|706   |        \genblk1[15].f  |FlipFlop_84              |     3|
+|707   |        \genblk1[16].f  |FlipFlop_85              |     3|
+|708   |        \genblk1[17].f  |FlipFlop_86              |     3|
+|709   |        \genblk1[18].f  |FlipFlop_87              |     3|
+|710   |        \genblk1[19].f  |FlipFlop_88              |     3|
+|711   |        \genblk1[1].f   |FlipFlop_89              |     3|
+|712   |        \genblk1[20].f  |FlipFlop_90              |     3|
+|713   |        \genblk1[21].f  |FlipFlop_91              |     3|
+|714   |        \genblk1[22].f  |FlipFlop_92              |     3|
+|715   |        \genblk1[23].f  |FlipFlop_93              |     3|
+|716   |        \genblk1[24].f  |FlipFlop_94              |     3|
+|717   |        \genblk1[25].f  |FlipFlop_95              |     3|
+|718   |        \genblk1[26].f  |FlipFlop_96              |     3|
+|719   |        \genblk1[27].f  |FlipFlop_97              |     3|
+|720   |        \genblk1[28].f  |FlipFlop_98              |     3|
+|721   |        \genblk1[29].f  |FlipFlop_99              |     3|
+|722   |        \genblk1[2].f   |FlipFlop_100             |     3|
+|723   |        \genblk1[30].f  |FlipFlop_101             |     3|
+|724   |        \genblk1[31].f  |FlipFlop_102             |     3|
+|725   |        \genblk1[3].f   |FlipFlop_103             |     3|
+|726   |        \genblk1[4].f   |FlipFlop_104             |     3|
+|727   |        \genblk1[5].f   |FlipFlop_105             |     3|
+|728   |        \genblk1[6].f   |FlipFlop_106             |     3|
+|729   |        \genblk1[7].f   |FlipFlop_107             |     3|
+|730   |        \genblk1[8].f   |FlipFlop_108             |     3|
+|731   |        \genblk1[9].f   |FlipFlop_109             |     3|
+|732   |      \genblk1[8].ri    |RegWLoad_13              |    32|
+|733   |        \genblk1[0].f   |FlipFlop_46              |     1|
+|734   |        \genblk1[10].f  |FlipFlop_47              |     1|
+|735   |        \genblk1[11].f  |FlipFlop_48              |     1|
+|736   |        \genblk1[12].f  |FlipFlop_49              |     1|
+|737   |        \genblk1[13].f  |FlipFlop_50              |     1|
+|738   |        \genblk1[14].f  |FlipFlop_51              |     1|
+|739   |        \genblk1[15].f  |FlipFlop_52              |     1|
+|740   |        \genblk1[16].f  |FlipFlop_53              |     1|
+|741   |        \genblk1[17].f  |FlipFlop_54              |     1|
+|742   |        \genblk1[18].f  |FlipFlop_55              |     1|
+|743   |        \genblk1[19].f  |FlipFlop_56              |     1|
+|744   |        \genblk1[1].f   |FlipFlop_57              |     1|
+|745   |        \genblk1[20].f  |FlipFlop_58              |     1|
+|746   |        \genblk1[21].f  |FlipFlop_59              |     1|
+|747   |        \genblk1[22].f  |FlipFlop_60              |     1|
+|748   |        \genblk1[23].f  |FlipFlop_61              |     1|
+|749   |        \genblk1[24].f  |FlipFlop_62              |     1|
+|750   |        \genblk1[25].f  |FlipFlop_63              |     1|
+|751   |        \genblk1[26].f  |FlipFlop_64              |     1|
+|752   |        \genblk1[27].f  |FlipFlop_65              |     1|
+|753   |        \genblk1[28].f  |FlipFlop_66              |     1|
+|754   |        \genblk1[29].f  |FlipFlop_67              |     1|
+|755   |        \genblk1[2].f   |FlipFlop_68              |     1|
+|756   |        \genblk1[30].f  |FlipFlop_69              |     1|
+|757   |        \genblk1[31].f  |FlipFlop_70              |     1|
+|758   |        \genblk1[3].f   |FlipFlop_71              |     1|
+|759   |        \genblk1[4].f   |FlipFlop_72              |     1|
+|760   |        \genblk1[5].f   |FlipFlop_73              |     1|
+|761   |        \genblk1[6].f   |FlipFlop_74              |     1|
+|762   |        \genblk1[7].f   |FlipFlop_75              |     1|
+|763   |        \genblk1[8].f   |FlipFlop_76              |     1|
+|764   |        \genblk1[9].f   |FlipFlop_77              |     1|
+|765   |      \genblk1[9].ri    |RegWLoad_14              |    32|
+|766   |        \genblk1[0].f   |FlipFlop                 |     1|
+|767   |        \genblk1[10].f  |FlipFlop_15              |     1|
+|768   |        \genblk1[11].f  |FlipFlop_16              |     1|
+|769   |        \genblk1[12].f  |FlipFlop_17              |     1|
+|770   |        \genblk1[13].f  |FlipFlop_18              |     1|
+|771   |        \genblk1[14].f  |FlipFlop_19              |     1|
+|772   |        \genblk1[15].f  |FlipFlop_20              |     1|
+|773   |        \genblk1[16].f  |FlipFlop_21              |     1|
+|774   |        \genblk1[17].f  |FlipFlop_22              |     1|
+|775   |        \genblk1[18].f  |FlipFlop_23              |     1|
+|776   |        \genblk1[19].f  |FlipFlop_24              |     1|
+|777   |        \genblk1[1].f   |FlipFlop_25              |     1|
+|778   |        \genblk1[20].f  |FlipFlop_26              |     1|
+|779   |        \genblk1[21].f  |FlipFlop_27              |     1|
+|780   |        \genblk1[22].f  |FlipFlop_28              |     1|
+|781   |        \genblk1[23].f  |FlipFlop_29              |     1|
+|782   |        \genblk1[24].f  |FlipFlop_30              |     1|
+|783   |        \genblk1[25].f  |FlipFlop_31              |     1|
+|784   |        \genblk1[26].f  |FlipFlop_32              |     1|
+|785   |        \genblk1[27].f  |FlipFlop_33              |     1|
+|786   |        \genblk1[28].f  |FlipFlop_34              |     1|
+|787   |        \genblk1[29].f  |FlipFlop_35              |     1|
+|788   |        \genblk1[2].f   |FlipFlop_36              |     1|
+|789   |        \genblk1[30].f  |FlipFlop_37              |     1|
+|790   |        \genblk1[31].f  |FlipFlop_38              |     1|
+|791   |        \genblk1[3].f   |FlipFlop_39              |     1|
+|792   |        \genblk1[4].f   |FlipFlop_40              |     1|
+|793   |        \genblk1[5].f   |FlipFlop_41              |     1|
+|794   |        \genblk1[6].f   |FlipFlop_42              |     1|
+|795   |        \genblk1[7].f   |FlipFlop_43              |     1|
+|796   |        \genblk1[8].f   |FlipFlop_44              |     1|
+|797   |        \genblk1[9].f   |FlipFlop_45              |     1|
+|798   |  sd                    |SSDDriver                |   164|
++------+------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 685.988 ; gain = 475.680
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 641 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 685.988 ; gain = 131.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 685.988 ; gain = 475.680
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+290 Infos, 226 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 685.988 ; gain = 462.734
+INFO: [Common 17-1381] The checkpoint 'C:/Users/msa.azzazy.AUC/piplined/piplined.runs/synth_1/RISCV_Top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 685.988 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 19 08:47:19 2019...

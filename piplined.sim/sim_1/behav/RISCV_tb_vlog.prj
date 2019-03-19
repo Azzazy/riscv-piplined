@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/Full_Adder.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/FlipFlop.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/RippleAdder.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/AdderSub.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/Decoder5_32.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/RegFile.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/ControlUnit.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/InstMem.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/ShiftLeft1.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/ALU.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/ALUControl.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/DataMem.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/ImmGen.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sources_1/imports/Lab7Src/RISCV.v"
+verilog xil_defaultlib  "../../../piplined.srcs/sim_1/imports/Lab7Src/RISCV_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

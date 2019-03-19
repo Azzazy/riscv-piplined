@@ -1,0 +1,141 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Mar 19 08:48:16 2019
+| Host         : CSE-P07-2168-13 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RISCV_Top_control_sets_placed.rpt
+| Design       : RISCV_Top
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    81 |
+| Unused register locations in slices containing registers |     7 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |            5 |
+| No           | No                    | Yes                    |             301 |          109 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1952 |          659 |
+| Yes          | No                    | Yes                    |             576 |          196 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------+----------------------------------------------+------------------+------------------+----------------+
+|   Clock Signal  |                 Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------+----------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG  |                                              |                  |                5 |             20 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_9              | rst_IBUF         |                8 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[102].f/mem_reg[18][31][0]  |                  |                6 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[102].f/mem_reg[1][31][0]   | rst_IBUF         |                8 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[102].f/mem_reg[2][31][0]   | rst_IBUF         |                7 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[19][0][0]    |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[22][0][0]    |                  |                7 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[27][31][0]   |                  |               14 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[28][31][0]   |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[30][31][0]   |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[44][31][0]   |                  |                6 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[39][31][0]   |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[43][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[53][31][0]   |                  |               13 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[55][31]_0[0] |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[56][31][0]   |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[39].f/mem_reg[59][31][0]   |                  |               15 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[0][31][0]    | rst_IBUF         |               17 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[16][31][0]   |                  |               16 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[21][31][0]   |                  |                8 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[24][31][0]   |                  |               16 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[37][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[33][31]_0[0] |                  |                5 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[36][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[40][31][0]   |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[48][31][0]   |                  |                7 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[49][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[50][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[51][31][0]   |                  |                8 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[40].f/mem_reg[62][31]_0[0] |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[41].f/mem_reg[25][31][0]   |                  |               11 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[41].f/mem_reg[26][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[41].f/mem_reg[31][31][0]   |                  |               15 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[41].f/mem_reg[47][31][0]   |                  |               29 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[41].f/mem_reg[63][31][0]   |                  |               32 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[41].f/mem_reg[52][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[41].f/mem_reg[60][31][0]   |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[42].f/mem_reg[17][31][0]   |                  |                5 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[42].f/mem_reg[23][31][0]   |                  |               13 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[42].f/mem_reg[35][31][0]   |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[42].f/mem_reg[61][31][0]   |                  |               16 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[15][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[20][31][0]   |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[29][31][0]   |                  |               11 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[32][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[41][31][0]   |                  |                7 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[34][31]_0[0] |                  |                7 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[38][31][0]   |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[42][31][0]   |                  |                8 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[46][31][0]   |                  |                8 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[54][31][0]   |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[43].f/mem_reg[58][31][0]   |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/E[0]                 |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[10][0][0]    |                  |               17 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[11][0][0]    |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[12][0][0]    |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[45][31][0]   |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[13][0][0]    |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[3][0][0]     |                  |                9 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[4][0][0]     |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[57][31][0]   |                  |               11 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[5][0][0]     |                  |                6 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[6][0][0]     |                  |                8 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[7][0][0]     |                  |               12 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[8][0][0]     |                  |               10 |             32 |
+|  rclk_IBUF_BUFG | rv/EX_MEM/genblk1[44].f/mem_reg[9][0][0]     |                  |               11 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_0              | rst_IBUF         |               11 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_1              | rst_IBUF         |               10 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_10             | rst_IBUF         |                8 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_11             | rst_IBUF         |               12 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_12             | rst_IBUF         |               20 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_13             | rst_IBUF         |                8 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_14             | rst_IBUF         |               14 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_2              | rst_IBUF         |                9 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_3              | rst_IBUF         |               10 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_4              | rst_IBUF         |                9 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_5              | rst_IBUF         |                9 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_6              | rst_IBUF         |               13 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_7              | rst_IBUF         |               11 |             32 |
+| ~rclk_IBUF_BUFG | rv/MEM_WB/genblk1[70].f/q_reg_8              | rst_IBUF         |               12 |             32 |
+|  rclk_IBUF_BUFG |                                              | rst_IBUF         |              109 |            301 |
++-----------------+----------------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 16+    |                    81 |
++--------+-----------------------+
+
+

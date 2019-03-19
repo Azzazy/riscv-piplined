@@ -1,0 +1,22 @@
+0.6
+2016.4
+Dec 14 2016
+22:58:16
+C:/Users/msa.azzazy.AUC/piplined/piplined.sim/sim_1/behav/glbl.v,1481753704,verilog,,,,glbl,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sim_1/imports/Lab7Src/RISCV_tb.v,1540257262,verilog,,,,RISCV_tb,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ALU.v,1540257262,verilog,,,,ALU,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ALUControl.v,1540257262,verilog,,,,ALUControl,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/AdderSub.v,1540257262,verilog,,,,AdderSub,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ControlUnit.v,1540257262,verilog,,,,ControlUnit,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/DataMem.v,1540273288,verilog,,,,DataMem,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Decoder5_32.v,1540257262,verilog,,,,Decoder5_32,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/FlipFlop.v,1540273288,verilog,,,,FlipFlop,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Full_Adder.v,1540257262,verilog,,,,Full_Adder,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ImmGen.v,1540257262,verilog,,,,ImmGen,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/InstMem.v,1540257262,verilog,,,,InstMem,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/Mux2_1.v,1540257262,verilog,,,,Mux2_1,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RISCV.v,1540571262,verilog,,,,RISCV,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegFile.v,1540257262,verilog,,,,RegFile,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RegWLoad.v,1540257262,verilog,,,,RegWLoad,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/RippleAdder.v,1540257262,verilog,,,,RippleAdder,,,,,,,,
+C:/Users/msa.azzazy.AUC/piplined/piplined.srcs/sources_1/imports/Lab7Src/ShiftLeft1.v,1540257262,verilog,,,,ShiftLeft1,,,,,,,,
