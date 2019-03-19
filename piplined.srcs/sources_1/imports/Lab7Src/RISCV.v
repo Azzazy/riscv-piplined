@@ -14,9 +14,9 @@ module RISCV (
 
     wire [31:0] PC_out, PCAdder_out, BranchAdder_out, PC_in, 
         RegR1, RegR2, RegW, ImmGen_out, Shift_out, ALUSrcMux_out, 
-        ALU_out, Mem_out, Inst;
+        ALU_out, Mem_out, Inst, forwardA_out, forwardB_out;
     wire Branch, MemRead, MemToReg, MemWrite, ALUSrc, RegWrite, Zero;
-    wire [1:0] ALUOp;
+    wire [1:0] ALUOp, forwardA, forwardB;
     wire [3:0] ALUSel;
     wire PCSrc;
     
@@ -61,8 +61,8 @@ module RISCV (
     RippleAdder IncPC(PC_out,4,1'b0,PCAdder_out,);
     RegFile rf(~clk,rst,MEM_WB_Ctrl[1],IF_ID_Inst[19:15],IF_ID_Inst[24:20],MEM_WB_Rd,RegW,RegR1,RegR2);
     ImmGen ig(IF_ID_Inst,ImmGen_out);
-    Mux2_1 #(32) aluSrcBMux(ID_EX_Ctrl[0],ID_EX_RegR2,ID_EX_Imm,ALUSrcMux_out);
-    ALU a1(ALUSel,ID_EX_RegR1,ALUSrcMux_out,ALU_out,Zero);
+    Mux2_1 #(32) aluSrcBMux(ID_EX_Ctrl[0],forwardB_out,ID_EX_Imm,ALUSrcMux_out);
+    ALU a1(ALUSel,forwardA_out,ALUSrcMux_out,ALU_out,Zero);
     ShiftLeft1 sh(ID_EX_Imm,Shift_out);
     RippleAdder OffsetPC(ID_EX_PC,Shift_out,1'b0,BranchAdder_out,);
     Mux2_1 #(32) pcSrcMux(PCSrc,PCAdder_out,EX_MEM_BranchAddOut,PC_in);
@@ -72,6 +72,10 @@ module RISCV (
     ControlUnit cu(IF_ID_Inst[6:4],Branch,MemRead,MemToReg,ALUOp,MemWrite,ALUSrc,RegWrite);
     ALUControl acu(ID_EX_Ctrl[2:1],ID_EX_Func[2:0],ID_EX_Func[3],ALUSel);
 
+    Mux4_1 #(32) forwardAMux(forwardA, ID_EX_RegR1, EX_MEM_ALU_out, RegW, 0, forwardA_out);
+    Mux4_1 #(32) forwardBMux(forwardB, ID_EX_RegR2, EX_MEM_ALU_out, RegW, 0, forwardB_out);
+    
+    ForwardUnit forwardUnit(ID_EX_Rs1, ID_EX_Rs2, EX_MEM_Rd, MEM_WB_Rd, EX_MEM_Ctrl[4], MEM_WB_Ctrl[1], forwardA, forwardB);
     always @(*) begin
         case(ledSel)
             0: leds <= Inst[15:0];

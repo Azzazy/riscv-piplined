@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
-| Date         : Tue Mar 19 08:48:52 2019
+| Date         : Tue Mar 19 10:34:13 2019
 | Host         : CSE-P07-2168-13 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file RISCV_Top_timing_summary_routed.rpt -rpx RISCV_Top_timing_summary_routed.rpx
 | Design       : RISCV_Top
@@ -54,7 +54,7 @@ Table of Contents
 --------------------
  There are 20 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 2829 register/latch pins with no clock driven by root clock pin: rclk (HIGH)
+ There are 2828 register/latch pins with no clock driven by root clock pin: rclk (HIGH)
 
 
 2. checking constant_clock
@@ -69,7 +69,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 6254 pins that are not constrained for maximum delay. (HIGH)
+ There are 6252 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
